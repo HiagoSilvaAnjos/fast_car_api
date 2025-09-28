@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from .routers import router as car_router
+from src.fast_car_api.routers import router as car_router
 app = FastAPI(
     title="Fast Car API",
     description="Uma API rápida para gerenciar carros",
