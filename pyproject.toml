@@ -12,6 +12,7 @@ fastapi = {extras = ["standard"], version = "^0.117.1"}
 uvicorn = "^0.37.0"
 sqlalchemy = "^2.0.43"
 alembic = "^1.16.5"
+mkdocs = "^1.6.1"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.13.2"
@@ -67,3 +68,4 @@ test = "pytest"
 test-cov = "pytest --cov=fast_car_api"
 clean = "find . -type f -name '*.pyc' -delete && find . -type d -name '__pycache__' -delete"
 ci = "task check && task test"
+docs = "mkdocs serve -a 127.0.0.1:8001"
